@@ -54,7 +54,7 @@
     "node-emoji": "^1.7.0",
     "parse-diff": "^0.4.0",
     "query-string": "^4.3.1",
-    "react": "16.0.0-alpha.12",
+    "react": "16.0.0",
     "react-native": "0.48.1",
     "react-native-actionsheet": "^2.2.0",
     "react-native-code-push": "^5.0.0-beta",
