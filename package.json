@@ -35,7 +35,9 @@
     "cp-history:android-staging": "code-push deployment history git-point-android Staging",
     "cp-history:android-production": "code-push deployment history git-point-android Production",
     "cp-history:ios-production": "code-push deployment history git-point-ios Production",
-    "doctoc": "doctoc --title='## Table of Contents' README.md"
+    "doctoc": "doctoc --title='## Table of Contents' README.md",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "lint-staged": {
     "*.js": [
@@ -55,7 +57,7 @@
     "parse-diff": "^0.4.0",
     "query-string": "^4.3.1",
     "react": "16.0.0-alpha.12",
-    "react-native": "0.48.1",
+    "react-native": "0.49.0",
     "react-native-actionsheet": "^2.2.0",
     "react-native-code-push": "^5.0.0-beta",
     "react-native-communications": "^2.2.1",
@@ -84,7 +86,8 @@
     "redux-persist-transform-encrypt": "^1.0.2",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1",
-    "rn-app-intro": "^0.0.4"
+    "rn-app-intro": "^0.0.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@commitlint/cli": "^3.1.0",
@@ -130,5 +133,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
